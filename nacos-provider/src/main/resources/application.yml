@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        #服务器内存太小nacos，就不放在上面了，等换一个服务器的先
+        #server-addr: cassell-zero.tk:8848
+        server-addr: localhost:8848
+
+server:
+  port: 8083
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
